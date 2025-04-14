@@ -1,0 +1,91 @@
+/* General styles for the Edit sections */
+.edit-table-container, .edit-model-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-table-container h1, .edit-model-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button.save-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #22abeb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.save-btn:hover {
+    background-color: #118ee2b7;
+  }
+  
+  button.save-btn:focus {
+    outline: none;
+  }
+  
+  /* Loading State */
+  .edit-table-container p, .edit-model-container p {
+    text-align: center;
+    color: #888;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .edit-table-container, .edit-model-container {
+      padding: 15px;
+    }
+  
+    form div {
+      flex-direction: column;
+    }
+  
+    label {
+      font-size: 13px;
+    }
+  
+    input, button.save-btn {
+      font-size: 14px;
+    }
+  }
+  

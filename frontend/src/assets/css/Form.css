@@ -1,0 +1,184 @@
+/* User Form Container */
+.user-form-container {
+  width: 50%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.success-message {
+  color: green;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4caf50;
+}
+
+.form-group input::placeholder,
+.form-group select {
+  color: #888;
+}
+
+/* Password Container */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+.password-container {
+  position: relative;
+  width: 100%; /* This makes the password field take the full width */
+}
+
+.password-container input {
+  width: 100%; /* Ensures the input element spans the full width */
+  padding-right: 40px; /* Adds space to the right for the toggle icon */
+}
+
+
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Adjust for centering */
+  color: black;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn:hover {
+  background-color: #e53935;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-close {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.overlay-close:hover {
+  background-color: #e53935;
+}
+
+/* Error Messages under Input Fields */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-form-container {
+    width: 90%;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .password-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

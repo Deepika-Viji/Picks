@@ -1,0 +1,96 @@
+/* General Form Container Styling */
+.edit-parameter-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Input Styling */
+  .edit-parameter-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-parameter-container form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff;
+    color: #555;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Container for Layout */
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Save Changes Button */
+  button.save-changes {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #22abeb;
+    color: white;
+    width: 48%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.save-changes:hover {
+    background-color: #118ee2;
+    transform: scale(1.05);
+  }
+  
+  /* Back Button */
+  button.back {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e7321d;
+    color: white;
+    width: 48%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.back:hover {
+    background-color: #a31708;
+    transform: scale(1.05);
+  }
+  

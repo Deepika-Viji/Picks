@@ -1,0 +1,37 @@
+/* Target the specific sidebar-dropdown-items inside the authentication block */
+.sidebar-link-group .sidebar-dropdown-menu .sidebar-dropdown-item {
+    padding-left: 0; /* Remove any padding that might cause misalignment */
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+.sidebar-link-group .sidebar-dropdown-menu .sidebar-dropdown-item .sidebar-link {
+    padding-left: 15px; /* Indent the text slightly */
+    display: block; /* Ensure it's block-level to control width */
+}
+
+/* Apply the hover effect to dropdown items */
+.sidebar-link-group .sidebar-dropdown-menu .sidebar-dropdown-item .sidebar-link:hover {
+    background-color: #f0f0f0d5;
+    color: #000; /* Add hover background and text color */
+}
+
+/* Apply the hover effect for Products and Requirements as well */
+.sidebar-link-group .sidebar-dropdown-item .sidebar-link {
+    padding-left: 15px; /* Indent the text slightly */
+    display: block; /* Ensure it's block-level to control width */
+}
+
+.sidebar-link-group .sidebar-dropdown-item .sidebar-link:hover {
+    background-color: #f0f0f0d5; /* Same hover background */
+    color: #000; /* Same hover text color */
+}
+
+.sidebar-link-group {
+    display: none; /* Hidden by default */
+    transition: max-height 0.3s ease-out; /* Smooth expand/collapse transition */
+  }
+  
+  .sidebar-link-group.d-block {
+    display: block;
+  }
+  
