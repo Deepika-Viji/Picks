@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-production-url.com/api' 
+    ? process.env.baseurl 
     : 'http://localhost:5000/api',
   timeout: 20000, // 20 seconds
   headers: {
