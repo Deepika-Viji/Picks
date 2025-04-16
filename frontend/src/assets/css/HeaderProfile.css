@@ -1,0 +1,141 @@
+/* Container for header button */
+.header-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Wrapper for profile button */
+.profile-btn-wrapper {
+  position: relative;
+  margin-top: 12px;
+}
+
+/* Style for profile button */
+.profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.2s ease; /* Smooth animation when clicked */
+}
+
+.profile-btn img {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  /* Original size and alignment unchanged */
+}
+
+/* Hover effect on profile button */
+.profile-btn:hover {
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  opacity: 0; /* Start hidden */
+  transform: translateY(-10px); /* Start slightly above for better animation */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Show the dropdown when toggleDropdown is called */
+.dropdown-menu.show {
+  display: block;
+  opacity: 1; /* Smooth transition to visible */
+  transform: translateY(0); /* Dropdown smoothly moves to place */
+}
+
+/* Style for dropdown items */
+.dropdown-menu .dropdown-item {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: white !important; /* Ensure white color */
+  background-color: #333 !important; /* Ensure dark background */
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover state for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+}
+
+/* Center the text inside the dropdown */
+.dropdown-txt {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.dropdown-txt p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.dropdown-txt span {
+  font-size: 12px;
+  color: black;
+}
+
+/* Specifically target the role and token number */
+.header-btn-box .dropdown-menu .dropdown-txt .role {
+  font-weight: bold;
+  color: #ff5733 !important;
+}
+
+.header-btn-box .dropdown-menu .dropdown-txt .token-number {
+  font-size: 15px;
+  color: black !important;
+}
+
+/* Style for "Please log in" text when user is not logged in */
+.dropdown-menu p {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+/* Login Button Styling */
+.login-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 20px; /* Slightly larger padding */
+  font-size: 15px; /* Increased font size for better readability */
+  background-color: #22abeb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px; /* Add margin for spacing */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1b98d1;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    right: 10px; /* Ensure dropdown is correctly positioned on smaller screens */
+    width: 180px; /* Adjust the width for smaller screens */
+  }
+}

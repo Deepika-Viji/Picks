@@ -1,0 +1,200 @@
+/* General Container for the User List */
+.user-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Align the content to the center */
+  justify-content: center; /* Ensure content is centered vertically */
+  margin: 0 auto; /* This centers the container horizontally */
+  max-width: 1200px; /* Set a max width for the container */
+  width: 100%; /* Ensures the container takes up full width */
+}
+
+/* Heading Styling */
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Flexbox container for Search and Create New User Button */
+.user-actions {
+  display: flex;
+  justify-content: space-between; /* Align search on the left and button on the right */
+  align-items: center;
+  width: 100%; /* Ensure the action items span full width */
+  margin-bottom: 40px;
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  max-width: 100%; /* Allow table to be responsive */
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #22abeb;
+  color: white;
+}
+
+.user-table tr {
+  background-color: white;
+}
+
+.user-table tr:hover {
+  background-color: #e7f0f0;
+}
+
+.user-table td {
+  color: #555;
+}
+
+.user-table td[colspan="6"] {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Search Input Styling */
+.search-input {
+  width: 50%; /* Adjusted width to allow space for the button */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color:white;
+}
+
+/* Create New User Button Styling */
+.create-new-user-button {
+  padding: 5px 40px; /* Adjust padding to make the button smaller */
+  font-size: 14px; /* Slightly smaller font size */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #22abebea;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: auto; /* Make the width auto to adjust according to the content */
+}
+
+.create-new-user-button:hover {
+  background-color: #118ee2b7;
+}
+
+/* Edit Button Styling */
+.edit-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #22abeb;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1b98d1;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e7321d;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #a31708;
+}
+
+/* Cancel Button Styling (For Delete Confirmation) */
+.cancel-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e7321d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #a31708 ;
+}
+
+/* Loading and Error Message Styling */
+.user-list-loading, .user-list-error {
+  text-align: center;
+  font-size: 1.0001rem;
+  color: #f39c12;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .user-actions {
+    flex-direction: column; /* Stack search and button vertically on small screens */
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px; /* Add space between search input and button */
+  }
+
+  .create-new-user-button {
+    width: 100%;
+  }
+
+  .user-table th, .user-table td {
+    padding: 8px 10px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 5px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: blue; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 4px;
+}
+
+.pagination-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: #a0c4ff; /* Light blue for disabled button */
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: darkblue; /* Darker blue on hover */
+}

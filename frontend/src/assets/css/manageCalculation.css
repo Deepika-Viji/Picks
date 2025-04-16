@@ -1,0 +1,183 @@
+/* Ensure the background of the page is white */
+.manage-calculations-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1150px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff; /* Set white background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headers */
+.manage-calculations-container h1,
+.manage-calculations-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Tables for models and calculations */
+.manage-calculations-tables-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 30px; /* Space between the models and tables sections */
+}
+
+/* Model and table sections */
+.manage-calculations-models,
+.manage-calculations-tables {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black; /* Ensure the text is black */
+  width: 100%;
+}
+
+/* Adding border to clearly separate the models and tables */
+.manage-calculations-models {
+  border: 1px solid #ddd; /* Light border around models section */
+}
+
+.manage-calculations-tables {
+  border: 1px solid #ddd; /* Light border around tables section */
+}
+
+/* Ensuring the table doesn't overflow */
+.manage-calculations-tables table,
+.manage-calculations-models table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures columns fit within the table */
+}
+
+/* Table headers */
+.manage-calculations-tables th,
+.manage-calculations-models th {
+  background-color: #22abeb;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Table cells */
+.manage-calculations-tables td,
+.manage-calculations-models td {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: black; /* Ensure table text is black */
+}
+
+/* Button styles for edit and delete (smaller and beside each other) */
+.manage-calculations-models .edit-btn,
+.manage-calculations-models .delete-btn,
+.manage-calculations-tables .edit-btn,
+.manage-calculations-tables .delete-btn {
+  padding: 4px 10px;  /* Smaller padding for smaller buttons */
+  font-size: 12px;     /* Smaller font size */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  height: 30px; /* Smaller height for the buttons */
+  line-height: 30px; /* Vertically center the text */
+  width: auto; /* Allow width to adjust based on content */
+  margin-right: 8px; /* Space between the buttons */
+}
+
+/* Edit button */
+.manage-calculations-models .edit-btn,
+.manage-calculations-tables .edit-btn {
+  background-color: #22abeb;
+  color: white;
+}
+
+.manage-calculations-models .edit-btn:hover,
+.manage-calculations-tables .edit-btn:hover {
+  background-color: #118ee2b7;
+}
+
+/* Delete button */
+.manage-calculations-models .delete-btn,
+.manage-calculations-tables .delete-btn {
+  background-color: #e7321d;
+  color: white;
+}
+
+.manage-calculations-models .delete-btn:hover,
+.manage-calculations-tables .delete-btn:hover {
+  background-color: #a31708;
+}
+
+/* Ensure that the buttons are beside each other */
+.manage-calculations-models td button,
+.manage-calculations-tables td button {
+  display: inline-block; /* Ensures they are beside each other */
+  margin-right: 8px; /* Adds space between buttons */
+}
+
+/* General buttons (ensure these aren't affected) */
+button {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .manage-calculations-tables-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .manage-calculations-models,
+  .manage-calculations-tables {
+    width: 100%;
+  }
+
+  .manage-calculations-tables table,
+  .manage-calculations-models table {
+    width: 100%;
+  }
+
+  .manage-calculations-tables th,
+  .manage-calculations-tables td,
+  .manage-calculations-models th,
+  .manage-calculations-models td {
+    font-size: 14px;
+  }
+}
+
+/* New buttons container */
+.buttons-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #22abeb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.buttons-container button:hover {
+  background-color: #1b98d1;
+}
