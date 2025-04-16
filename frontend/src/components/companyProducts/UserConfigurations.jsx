@@ -95,7 +95,7 @@ const UserConfigurations = () => {
     navigate('/products', { 
       state: { 
         isEdit: true,
-        isEditFromConfigurations: true, // Add this flag
+        // isEditFromConfigurations: true, // Add this flag
         editConfigId: config._id,
         isEditFromConfigurations: true,
         partCode: config.partCode,
