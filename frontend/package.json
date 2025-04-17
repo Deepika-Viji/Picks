@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "build": "npx vite build",
+  "build": "npm ci && npx vite build",
   "dev": "npx vite",
   "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
   "preview": "npx vite preview",
