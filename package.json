@@ -6,7 +6,7 @@
         "build": "cd frontend && npm install && npm run build",
         "start": "cd backend && npm install && npm start"
     },
-    "dependencies": {
+    "devDependencies": {
         "vite": "^6.3.1"
     }
 }
