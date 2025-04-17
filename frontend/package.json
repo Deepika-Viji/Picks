@@ -10,7 +10,8 @@
     "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "vite"
+    // "start": "vite",
+    "start": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^38.0.1",
@@ -57,7 +58,8 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.6.13",
     "sweetalert2-react-content": "^5.0.7",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "vite": "^6.3.0",
