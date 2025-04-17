@@ -1,9 +1,9 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 
-  (import.meta.env.PROD ? 'https://picks-wu9p.onrender.com' : 'http://localhost:5000');
+// const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 
+//   (import.meta.env.PROD ? 'https://picks-wu9p.onrender.com' : 'http://localhost:5000');
 
-console.log('Environment:', import.meta.env.MODE);
-console.log('API Base URL:', API_BASE_URL);
-  
+// console.log('Environment:', import.meta.env.MODE);
+// console.log('API Base URL:', API_BASE_URL);
+API_BASE_URL = 'https://picks-wu9p.onrender.com';
 
 const API_CONFIG = {
   baseUrl: API_BASE_URL,
