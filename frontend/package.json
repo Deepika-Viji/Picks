@@ -5,11 +5,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start": "serve -s dist -l $PORT"
+  "build": "npx vite build",
+  "dev": "npx vite",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "npx vite preview",
+  "start": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^38.0.1",
