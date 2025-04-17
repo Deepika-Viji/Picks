@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "chmod +x node_modules/.bin/vite && vite build",
+    "build": "npm install && npm run build",
     "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -56,11 +56,10 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.6.13",
     "sweetalert2-react-content": "^5.0.7",
-    "swiper": "^9.4.1",
-    "vite": "^6.3.0"
-
+    "swiper": "^9.4.1"
   },
   "devDependencies": {
+    "vite": "^6.3.0",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@types/sortablejs": "^1.15.1",
