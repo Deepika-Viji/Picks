@@ -40,11 +40,11 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: './', // 👈 THIS LINE IS CRUCIAL
+  base: '/', // 👈 THIS LINE IS CRUCIAL
   plugins: [react()],
-  resolve: {
-    alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
-  },
+  // resolve: {
+  //   alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
+  // },
   server: {
     host: true, // allow external access
     port: 5173, // optional
