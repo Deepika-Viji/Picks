@@ -4,17 +4,18 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: 'localhost',
-    port: 5173,
+    host: '0.0.0.0',
+    port: process.env.PORT || 5173,
     strictPort: true,
     hmr: {
       protocol: 'ws',
-      host: 'localhost',
-      port: 5173
-    }
+      host: 'picksfrontend.onrender.com',
+      port: 443
+    },
+    allowedHosts: ['picksfrontend.onrender.com']
   },
   preview: {
-    port: 5173,
+    port: process.env.PORT || 5173,
     strictPort: true
   }
 });
