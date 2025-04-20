@@ -9,11 +9,11 @@ const API_CONFIG = {
   baseUrl: API_BASE_URL,
   endpoints: {
     auth: {
-      login: '/api/auth/login',
+      login: '/api/user/login',
       register: '/api/auth/register',
       verify: '/api/auth/verify',
-      refresh: '/api/auth/refresh',
-      logout: '/api/auth/logout'
+      refresh: '/api/user/refresh',
+      logout: '/api/user/logout'
     },
     user: {
       profile: '/api/users/me',
