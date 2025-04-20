@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^38.0.1",
